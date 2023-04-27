@@ -1,0 +1,33 @@
+<html>
+    <head> 
+        <title> Join Room</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+    <link rel="stylesheet" type="text/css" href="kwitter_room.css">
+    
+   
+    
+    </head>
+    <body>
+        <div class="container">
+            <h4 id="username"></h4>
+            <button onclick="logout()" id="logout" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+       
+            <center>
+
+
+                <input type="text" class="form-control" id="room_name" placeholder="Enter the name of room you want to join or create">
+
+                <hr>
+                <button onclick="add_room()" class="btn btn-warning" id="new_room"> Add Room</button>
+
+                <h3>Currently trending rooms :</h3>
+                <div id="output"> </div>
+        </center>
+    </body>
+    <script src="kwitter_room.js"></script>
+</html>
